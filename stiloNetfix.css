@@ -1,0 +1,198 @@
+@charset "UTF=8";
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(./netflix.logo2.jpeg);
+    background-repeat: no-repeat;
+    background-position:  top center;
+    background-size: cover;
+    overflow: hidden;
+   
+
+   
+   
+}
+
+.logo-netflix{
+    background-color: transparent;
+    display: flex;
+}
+.logo-netflix img{
+    width: 200px;
+    padding: 10px;
+}
+/*CONFIGURANDO A NOSSA TELA DE LOGIN*/
+.container-form{
+    width: 450px;
+    padding: 50px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.659);
+    position: relative;
+    top: 15%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+} 
+h1{
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+}
+form{
+    display:block;
+    flex-direction: column;
+}
+form .inputs-dados{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 17px;
+    border: none;
+    border-radius: 10px;
+    text-indent: 20px;
+    outline: none;
+    background-color: #888;
+   
+
+}
+.inputs-dados::placeholder{
+    color: #fff;
+    font-weight: 500;
+    font-size: 1em;
+}
+
+form input[type="submit"]{
+    width: 100%;
+    height: 50px;
+    margin-top: 40px;
+    margin-bottom: 19px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #B20710;
+    color: #fff;
+    font-weight: 300;
+    font-size: 1em;
+    transition: 2s;
+}
+form input[type="submit"]:hover{
+    transform: scale(1.05);
+}
+form label{
+    color: #aba9a9;
+    margin-left: -130px;
+
+}
+
+.nedd-help a{
+    text-decoration: none;
+    color: #aba9a9;
+    font-family: inherit;
+    cursor: pointer;
+}
+.nedd-help{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+#Remember{
+    border: none;
+    outline: none;
+    background-color: #B20710;
+}
+#cadastro{
+    color: #aba9a9;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+#cadastro > a{
+    margin-left: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+   
+}
+.frase-final{
+    color: #aba9a9;
+    font-size: 1rem;
+
+}
+.frase-final > a{
+    text-decoration: none;
+    color: blue;
+}
+.container-form form > i{
+    position: absolute;
+    justify-content: flex-end;
+    align-items: flex-end;
+    top: 123px;
+    right: 56px;
+    color: #fff;
+  
+}
+.container-form form .bx-key{
+    position: absolute;
+    justify-content: flex-end;
+    align-items: flex-end;
+    top: 190px;
+    right: 56px;
+    color: #fff;
+
+}
+/*MINHAS MEDIAS */
+@media (max-width: 640px){
+    body{
+        background-image: url(./netflix.png);
+        width: 100vw;
+        height: 100vh;
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+        
+    }
+    h{
+        text-align: center;
+    }
+    .container-form{
+
+    }
+
+}
+@media screen and (max-width: 768px){
+    body{
+        background-image: url(./netflix.png);
+        width: 100vw;
+        height: 100vh;
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+        
+    }
+    h1{
+        text-align: center;
+    }
+    .logo-netflix{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container-form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
